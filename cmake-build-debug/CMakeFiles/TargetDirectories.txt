@@ -1,0 +1,3 @@
+F:/CProjects/dataStructureInC/cmake-build-debug/CMakeFiles/dataStructureInC.dir
+F:/CProjects/dataStructureInC/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/CProjects/dataStructureInC/cmake-build-debug/CMakeFiles/rebuild_cache.dir
