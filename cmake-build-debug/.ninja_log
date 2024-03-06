@@ -1,3 +1,26 @@
 # ninja log v5
 0	811	7314172031972600	CMakeFiles/dataStructureInC.dir/main.c.obj	d880048cc832b4a9
 812	989	7314172033688015	dataStructureInC.exe	53a0b99b64079900
+5	189	7314237967471133	build.ninja	f8f40dd74431db44
+6	777	7314237975426036	CMakeFiles/dataStructureInC.dir/libs/ElementType.c.obj	b9b39838dddd125b
+1	779	7314237975445981	CMakeFiles/dataStructureInC.dir/libs/SequenceList.c.obj	1d349a89abc1d490
+3	780	7314237975465928	CMakeFiles/dataStructureInC.dir/main.c.obj	d880048cc832b4a9
+781	974	7314237977355438	dataStructureInC.exe	5f745a13f292f08
+36	873	7314355999608278	CMakeFiles/dataStructureInC.dir/libs/ElementType.c.obj	b9b39838dddd125b
+2	920	7314356000079467	CMakeFiles/dataStructureInC.dir/libs/SequenceList.c.obj	1d349a89abc1d490
+10	926	7314356000143949	CMakeFiles/dataStructureInC.dir/main.c.obj	d880048cc832b4a9
+926	1309	7314356003913971	dataStructureInC.exe	5f745a13f292f08
+3	81	7314356063625874	CMakeFiles/dataStructureInC.dir/main.c.obj	d880048cc832b4a9
+81	201	7314356064786666	dataStructureInC.exe	5f745a13f292f08
+2	100	7314357394970855	CMakeFiles/dataStructureInC.dir/libs/SequenceList.c.obj	1d349a89abc1d490
+100	232	7314357396245579	dataStructureInC.exe	5f745a13f292f08
+2	85	7314358307766370	CMakeFiles/dataStructureInC.dir/libs/SequenceList.c.obj	1d349a89abc1d490
+85	213	7314358309016273	dataStructureInC.exe	5f745a13f292f08
+2	87	7314359233704325	CMakeFiles/dataStructureInC.dir/main.c.obj	d880048cc832b4a9
+9	96	7314359233798570	CMakeFiles/dataStructureInC.dir/libs/SequenceList.c.obj	1d349a89abc1d490
+96	227	7314359235048585	dataStructureInC.exe	5f745a13f292f08
+2	77	7314359389019023	CMakeFiles/dataStructureInC.dir/main.c.obj	d880048cc832b4a9
+77	200	7314359390214391	dataStructureInC.exe	5f745a13f292f08
+10	99	7314361880432340	CMakeFiles/dataStructureInC.dir/main.c.obj	d880048cc832b4a9
+2	101	7314361880457455	CMakeFiles/dataStructureInC.dir/libs/SequenceList.c.obj	1d349a89abc1d490
+101	235	7314361881766578	dataStructureInC.exe	5f745a13f292f08
