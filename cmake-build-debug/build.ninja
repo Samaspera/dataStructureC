@@ -67,6 +67,12 @@ build CMakeFiles/dataStructureInC.dir/libs/ElementType.c.obj: C_COMPILER__dataSt
   OBJECT_DIR = CMakeFiles\dataStructureInC.dir
   OBJECT_FILE_DIR = CMakeFiles\dataStructureInC.dir\libs
 
+build CMakeFiles/dataStructureInC.dir/libs/LinkedList.c.obj: C_COMPILER__dataStructureInC_Debug F$:/CProjects/dataStructureInC/libs/LinkedList.c || cmake_object_order_depends_target_dataStructureInC
+  DEP_FILE = CMakeFiles\dataStructureInC.dir\libs\LinkedList.c.obj.d
+  FLAGS = -g -std=gnu11
+  OBJECT_DIR = CMakeFiles\dataStructureInC.dir
+  OBJECT_FILE_DIR = CMakeFiles\dataStructureInC.dir\libs
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target dataStructureInC
@@ -75,7 +81,7 @@ build CMakeFiles/dataStructureInC.dir/libs/ElementType.c.obj: C_COMPILER__dataSt
 #############################################
 # Link the executable dataStructureInC.exe
 
-build dataStructureInC.exe: C_EXECUTABLE_LINKER__dataStructureInC_Debug CMakeFiles/dataStructureInC.dir/main.c.obj CMakeFiles/dataStructureInC.dir/libs/SequenceList.c.obj CMakeFiles/dataStructureInC.dir/libs/ElementType.c.obj
+build dataStructureInC.exe: C_EXECUTABLE_LINKER__dataStructureInC_Debug CMakeFiles/dataStructureInC.dir/main.c.obj CMakeFiles/dataStructureInC.dir/libs/SequenceList.c.obj CMakeFiles/dataStructureInC.dir/libs/ElementType.c.obj CMakeFiles/dataStructureInC.dir/libs/LinkedList.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\dataStructureInC.dir

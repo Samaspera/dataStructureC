@@ -3,8 +3,6 @@
 #ifndef DATASTRUCTUREINC_ELEMENTTYPE_H
 #define DATASTRUCTUREINC_ELEMENTTYPE_H
 
-#endif //DATASTRUCTUREINC_ELEMENTTYPE_H
-
 #define DEFAULT 1
 #define ERROR -1
 
@@ -25,3 +23,5 @@ ElemType error();
 
 //judge if two element is equal
 bool eq(ElemType a, ElemType b);
+
+#endif //DATASTRUCTUREINC_ELEMENTTYPE_H

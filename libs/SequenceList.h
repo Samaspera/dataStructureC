@@ -17,25 +17,25 @@ typedef struct {
 //note that rank = index + 1
 
 //init a sequence list
-SequenceList *initList();
+SequenceList *initSequenceList();
 
 //create a sequence list quickly
-SequenceList *createList(const int a[], int length);
+SequenceList *createSequenceList(const int a[], int length);
 
 //increase capacity of a sequence list
-SequenceList *increaseList(SequenceList *sqList, int capacity);
+SequenceList *increaseSequenceList(SequenceList *sqList, int capacity);
 
 //insert a element by rank
-bool insertElement(SequenceList *sqlist, ElemType e, int i);
+bool insertElementInSequenceList(SequenceList *sqlist, ElemType e, int i);
 
 //get element by given rank
-ElemType getElem(SequenceList list, int i);
+ElemType getElemInSequenceList(SequenceList list, int i);
 
 //delete an element by given rank
-ElemType deleteElement(SequenceList *list, int i);
+ElemType deleteElementInSequenceList(SequenceList *list, int i);
 
 //destroy a list
-void destroyList(SequenceList *list);
+void destroySequenceList(SequenceList *list);
 
 //traverse the list
-void traverse(SequenceList list, ElemType *res);
+void traverseSequenceList(SequenceList list, ElemType *res);

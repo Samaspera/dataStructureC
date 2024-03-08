@@ -5,7 +5,7 @@
  * init a sequence list
  * @return pointer of the sequence list
  */
-SequenceList *initList() {
+SequenceList *initSequenceList() {
     SequenceList *sqList = (SequenceList *) malloc(sizeof(SequenceList));
     sqList->maxSize = INIT_SIZE;
     sqList->data = (ElemType *) malloc(sizeof(ElemType) * INIT_SIZE);
@@ -19,14 +19,14 @@ SequenceList *initList() {
  * @param length the length of array
  * @return pointer of a sequence list
  */
-SequenceList *createList(const int a[], int length) {
-    SequenceList *list = initList();
+SequenceList *createSequenceList(const int a[], int length) {
+    SequenceList *list = initSequenceList();
     int i;
     for (i = 1; i <= length; i++) {
         ElemType e;
         e.id = i;
         e.data = a[i - 1];
-        if (!insertElement(list, e, i)) {  //if insert failed, return the list incompletely
+        if (!insertElementInSequenceList(list, e, i)) {  //if insert failed, return the list incompletely
             return list;
         }
     }
@@ -39,7 +39,7 @@ SequenceList *createList(const int a[], int length) {
  * @param capacity new added capacity
  * @return pointer of new sequence list
  */
-SequenceList *increaseList(SequenceList *sqList, int capacity) {
+SequenceList *increaseSequenceList(SequenceList *sqList, int capacity) {
     SequenceList *newList = (SequenceList *) malloc(sizeof(SequenceList));
     newList->length = sqList->length;
     newList->maxSize = sqList->maxSize + capacity;
@@ -59,7 +59,7 @@ SequenceList *increaseList(SequenceList *sqList, int capacity) {
  * @param i rank
  * @return inserted sequence list
  */
-bool insertElement(SequenceList *sqlist, ElemType e, int i) {
+bool insertElementInSequenceList(SequenceList *sqlist, ElemType e, int i) {
     if (i > sqlist->length + 1) return false;  //overflowed
     if (sqlist->length >= sqlist->maxSize) return false;
     int j;
@@ -77,7 +77,7 @@ bool insertElement(SequenceList *sqlist, ElemType e, int i) {
  * @param i element rank
  * @return element
  */
-ElemType getElem(SequenceList list, int i) {
+ElemType getElemInSequenceList(SequenceList list, int i) {
     if (i >= list.length || i <= 0) return error();  //if out of index, return error
     return list.data[i - 1];
 }
@@ -88,7 +88,7 @@ ElemType getElem(SequenceList list, int i) {
  * @param i element rank
  * @return deleted element
  */
-ElemType deleteElement(SequenceList *list, int i) {
+ElemType deleteElementInSequenceList(SequenceList *list, int i) {
     if (i >= list->length || i <= 0) return error();
     ElemType e;
     e = list->data[i - 1];
@@ -104,7 +104,7 @@ ElemType deleteElement(SequenceList *list, int i) {
  * destroy a list
  * @param list the sequence list to be destroyed
  */
-void destroyList(SequenceList *list) {
+void destroySequenceList(SequenceList *list) {
     free(list->data);
     free(list);
 }
@@ -112,9 +112,9 @@ void destroyList(SequenceList *list) {
 /** tested v0.1
  * traverse the list
  * @param list
- * @param res the result of traverse
+ * @param res the result of traversal
  */
-void traverse(SequenceList list, ElemType *res) {
+void traverseSequenceList(SequenceList list, ElemType *res) {
     int i;
     for (i = 0; i < list.length; i++) {
         res[i] = list.data[i];
